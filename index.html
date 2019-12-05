@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #CCC;
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333;
+            box-sizing: border-box;
+            position: absolute;
+            background: #CCC;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .cell:hover{
+            transform: translateY(2px);
+            border: 1px solid  rgb(50, 50, 50);
+            box-sizing: border-box;
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333;
+        }
+
+        .cell-boom-clicked {
+            background: rgb(126, 125, 125);
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+        }
+
+        .cell-empty-clicked {
+            background: rgba(59, 255, 59, 0.258);
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+        }
+
+        .cell-flag-clicked:after {
+            text-align: center;
+            line-height: 50px;
+            font-size: 28px;
+            content: "⛳";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameArea"></div>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>
